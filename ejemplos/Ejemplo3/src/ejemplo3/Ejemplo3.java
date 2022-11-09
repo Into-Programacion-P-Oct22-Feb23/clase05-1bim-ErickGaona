@@ -12,6 +12,8 @@ siguiente texto; Estudiante reprobado con un promedio: ?
  */
 package ejemplo3;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author reroes
@@ -23,10 +25,13 @@ public class Ejemplo3 {
         double promedio = 10;
 
         if (promedio >= 7.5) {
+           
+                        
             System.out.printf("Estudiante aprobado con un "
                     + "promedio: %.2f\n", promedio);
+                   
         } else {
-            if ((promedio >= 5) && (promedio < 7.5)) {
+            if ((promedio >= 5) || (promedio < 7.5)) {
                 System.out.printf("Estudiante en suspenso con un "
                         + "promedio: %.2f\n", promedio);
             } else {
